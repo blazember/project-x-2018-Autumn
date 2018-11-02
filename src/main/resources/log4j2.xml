@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR">
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{ABSOLUTE} %5p - [%c{1}] %t - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+
+        <Logger name="com.hazelcast.map.DefaultVictimCache" level="debug"/>
+    </Loggers>
+
+</Configuration>
